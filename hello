@@ -1,0 +1,7 @@
+yum update all
+yum  install httpd  -y
+systemctl enable --now httpd
+touch /var/www/html/index.html
+echo "my name is rahul" > /var/www/html/index.html/
+systemctl restart httpd
+
